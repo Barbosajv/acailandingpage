@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+.firstpart{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(4, 14, 58);
+}
+
+.itens{
+    padding: 15vh;
+}
+
+.itens h1{
+    color: antiquewhite;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.itens button{
+    background: yellow;
+    height: 45px;
+    color: rgb(45, 4, 58);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    margin-left: 20px;
+}
+
+.itens button:hover{
+    background: rgb(197, 197, 7);
+    cursor: pointer;
+}
+
+
+.itens p{
+    color: antiquewhite;
+    margin-top: 30px;
+}
+
+.itens img{
+    margin-left: 500px;
+    margin-top: -900px;
+    height: 350px;
+
+}
+
+footer{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    height: 30vh;
+    background-color: rgb(23, 4, 39);
+}
+
+.leftside{
+    float: left;
+}
+
+.pagamentos{
+    height: 90px;
+}
+
+footer p{
+    color: white;
+}
+
+.rsidefooter{
+    float: right;
+    margin-right: 30vh;
+}
+
+.outros{
+    display: flex;
+}
+
+.imgpay{
+    width: 20px;
+    height: 20px;
+}
+
+.metodos{
+    display: flex;
+    float: right;
+    margin-right: 95px;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.metodos img{
+    width: 50px;
+    height: 50px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 150px;
+    margin-top: 120px;
+    margin-right: -16vh;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* FORM */ 
+
+.form{
+    width: 400px;
+    height: 65vh;
+    background-color: rgb(23, 4, 39);
+    color: white;
+    float: right;
+    border-radius: 8px;
+    margin-top: -490px;
+    margin-right: 300px;
+    padding: 50px;
+}
+
+.form h1{
+    text-align: center;
+}
+
+.form img{
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+
+.form img:hover{
+    transform: scale(1.2);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inputs .inpfields{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: none;
+
+}
+
+#nome{
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 2em;
+}
+
+#email{
+    background-image: url(../images/email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 2em;
+}
+
+#senha{
+    background-image: url(../images/eye.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 2em;
+}
+
+.inputs input[type=text]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=email]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=password]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=button]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(45, 4, 58);
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 3px;
+}
+
+.inputs input[type=button]:hover{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(182, 128, 199);
+    color: white;
+    cursor: pointer;
+}
+
+.mobilefooter{
+    display: none;
+    width: 100%;
+    height: 30vh;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1680px){
+
+.form{
+    width: 400px;
+    height: 65vh;
+    margin-top: -490px;
+    margin-right: 150px;
+    padding: 50px;
+}
+
+.rsidefooter{
+    float: right;
+    margin-right: 15vh;
+}
+
+
+/*@media screen and (max-width: 1366px){
+
+    .form{
+        width: 400px;
+        height: 80vh;
+        background-color: rgb(23, 4, 39);
+        color: white;
+        float: right;
+        border-radius: 8px;
+        margin-top: -520px;
+        margin-right: 3000px;
+        padding: 50px;
+    }
+    
+    .rsidefooter{
+        float: right;
+        margin-right: 15vh;
+    }
+    
+    footer{
+        padding-top: 5vh;
+        padding-left: 15vh;
+        height: 30vh;
+        background-color: rgb(23, 4, 39);
+    }
+    
+    .rsidefooter{
+        float: right;
+        margin-right: 5vh;
+        margin-top: -20px;
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        width: 150px;
+        margin-top: 100px;
+        margin-right: -19vh;
+        cursor: pointer;
+    }
+    
+    .firstpart{
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(45, 4, 58);
+    }
+    
+    .itens{
+        padding: 15vh;
+        margin-left: -80px;
+    }
+    
+    .itens img{
+        margin-left: 76%;
+        margin-top: -900px;
+        height: 350px;
+    
+    }
+    
+    .itens h1{
+        color: antiquewhite;
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+    
+    .itens button{
+        background: yellow;
+        height: 45px;
+        color: rgb(45, 4, 58);
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px;
+        border: 0;
+        margin-left: 150px;
+    }
+    
+    .itens p{
+        color: antiquewhite;
+        margin-top: 30px;
+        margin-left: -800px;
+        text-align: center;
+    }
+    
+    
+    
+    }*/
+
+
+
+
+@media screen and (max-width: 1440px){
+
+.form{
+    width: 400px;
+    height: 65vh;
+    background-color: rgb(23, 4, 39);
+    color: white;
+    float: right;
+    border-radius: 8px;
+    margin-top: -420px;
+    margin-right: 450px;
+    padding: 50px;
+}
+
+.form h1{
+    margin-top: -30px;
+    padding-bottom: -30px;
+}
+
+.rsidefooter{
+    float: right;
+    margin-right: 15vh;
+}
+
+footer{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    height: 30vh;
+    background-color: rgb(23, 4, 39);
+}
+
+.rsidefooter{
+    float: right;
+    margin-right: 5vh;
+    margin-top: -20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 150px;
+    margin-top: 100px;
+    margin-right: -19vh;
+    cursor: pointer;
+}
+
+.firstpart{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(45, 4, 58);
+}
+
+.itens{
+    padding: 15vh;
+    margin-left: -80px;
+}
+
+.itens img{
+    margin-left: 76%;
+    margin-top: -900px;
+    height: 350px;
+
+}
+
+.itens h1{
+    color: antiquewhite;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.itens button{
+    background: yellow;
+    height: 45px;
+    color: rgb(45, 4, 58);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    margin-left: 150px;
+}
+
+.itens p{
+    color: antiquewhite;
+    margin-top: 30px;
+    margin-left: -800px;
+    text-align: center;
+}
+
+.inputs input[type=text]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=email]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=password]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputs input[type=button]{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(45, 4, 58);
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 3px;
+}
+
+.inputs input[type=button]:hover{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(182, 128, 199);
+    color: white;
+    cursor: pointer;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inputs .inpfields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+
+}
+
+
+.form img{
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+footer{
+    padding-top: 0vh;
+    padding-left: 15vh;
+    height: 30vh;
+    background-color: rgb(23, 4, 39);
+}
+
+.rsidefooter{
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10px;
+}
+.buttons{
+    display: flex;
+    float: right;
+    width: 150px;
+    margin-top: 120px;
+    margin-right: -25vh;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .form{
+        width: 400px;
+        height: 65vh;
+        background-color: rgb(23, 4, 39);
+        color: white;
+        float: right;
+        border-radius: 8px;
+        margin-top: -440px;
+        margin-right: 50px;
+        padding: 50px;
+    }
+
+    .form h1{
+        text-align: center;
+    }
+
+    .form img{
+        width: 25px;
+        height: 25px;
+        margin: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+    
+    }
+    
+    .form img:hover{
+        transform: scale(1.2);
+    }
+    
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputs .inpfields{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border: none;
+    
+    }
+    
+    #nome{
+        background-image: url(../images/user.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1.3em;
+        padding-left: 2em;
+    }
+    
+    #email{
+        background-image: url(../images/email.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1.3em;
+        padding-left: 2em;
+    }
+    
+    #senha{
+        background-image: url(../images/eye.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1.3em;
+        padding-left: 2em;
+    }
+    
+    .inputs input[type=text]{
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border-radius: 3px;
+    }
+    
+    .inputs input[type=email]{
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border-radius: 3px;
+    }
+    
+    .inputs input[type=password]{
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border-radius: 3px;
+    }
+    
+    .inputs input[type=button]{
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: rgb(45, 4, 58);
+        color: white;
+        cursor: pointer;
+        transition: 0.8s;
+        border-radius: 3px;
+    }
+    
+    .inputs input[type=button]:hover{
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: rgb(182, 128, 199);
+        color: white;
+        cursor: pointer;
+    }
+    
+
+    .itens h1{
+        color: antiquewhite;
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+    .itens img{
+        display: none;
+    }
+
+    .itens p{
+        color: antiquewhite;
+        margin-top: 30px;
+        margin-left: -400px;
+        text-align: center;
+    }
+
+    .rsidefooter{
+        float: right;
+        margin-right: 5vh;
+        margin-top: -5px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .form{
+        margin-top: 60px;
+    }
+
+    .itens h1{
+        color: antiquewhite;
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+    
+    .itens p{
+        color: antiquewhite;
+        margin-top: 30px;
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .itens img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rsidefooter{
+        float: right;
+        margin-right: 5vh;
+        margin-top: -5px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .mobilefooter{
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+
+
+}
